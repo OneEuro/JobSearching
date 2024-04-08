@@ -31,6 +31,7 @@ class MainPageViewController: UIViewController {
         
         setupSubviews()
         setupUI()
+//        viewModel.getJobData()
     }
     
     required init?(coder: NSCoder) {

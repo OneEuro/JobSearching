@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol MainPageViewModelProtocol {
-    
+    func getJobData()
 }

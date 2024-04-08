@@ -17,6 +17,9 @@
 		E70075D92BC2E434007175BC /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075D82BC2E434007175BC /* Code.swift */; };
 		E70075DD2BC31942007175BC /* VacancieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075DC2BC31942007175BC /* VacancieCardView.swift */; };
 		E70075DF2BC43367007175BC /* LoginEmployerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075DE2BC43367007175BC /* LoginEmployerView.swift */; };
+		E70075E22BC43737007175BC /* JSONDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075E12BC43737007175BC /* JSONDataFetch.swift */; };
+		E70075E42BC437D5007175BC /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075E32BC437D5007175BC /* EndPoints.swift */; };
+		E70075E62BC4382E007175BC /* MockAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = E70075E52BC4382E007175BC /* MockAPI.json */; };
 		E79C3CE32BBECE0500B57D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C3CE22BBECE0500B57D26 /* AppDelegate.swift */; };
 		E79C3CE52BBECE0500B57D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C3CE42BBECE0500B57D26 /* SceneDelegate.swift */; };
 		E79C3CEC2BBECE0800B57D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79C3CEB2BBECE0800B57D26 /* Assets.xcassets */; };
@@ -73,6 +76,9 @@
 		E70075D82BC2E434007175BC /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		E70075DC2BC31942007175BC /* VacancieCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancieCardView.swift; sourceTree = "<group>"; };
 		E70075DE2BC43367007175BC /* LoginEmployerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmployerView.swift; sourceTree = "<group>"; };
+		E70075E12BC43737007175BC /* JSONDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataFetch.swift; sourceTree = "<group>"; };
+		E70075E32BC437D5007175BC /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		E70075E52BC4382E007175BC /* MockAPI.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockAPI.json; sourceTree = "<group>"; };
 		E79C3CDF2BBECE0500B57D26 /* JobSearching_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobSearching_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79C3CE22BBECE0500B57D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79C3CE42BBECE0500B57D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +169,15 @@
 				E70075DC2BC31942007175BC /* VacancieCardView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		E70075E02BC43720007175BC /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E70075E12BC43737007175BC /* JSONDataFetch.swift */,
+				E70075E52BC4382E007175BC /* MockAPI.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		E79C3CD62BBECE0500B57D26 = {
@@ -281,6 +296,7 @@
 		E79C3D272BBED7EA00B57D26 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E70075E02BC43720007175BC /* JSON */,
 				E79C3D532BBEF63B00B57D26 /* NetworkServices */,
 				E79C3D2D2BBED84200B57D26 /* UserDefaults */,
 				E79C3D282BBED7F600B57D26 /* PasswordService */,
@@ -401,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				E79C3D542BBEF64600B57D26 /* JSONModels */,
+				E70075E32BC437D5007175BC /* EndPoints.swift */,
 			);
 			path = NetworkServices;
 			sourceTree = "<group>";
@@ -580,6 +597,7 @@
 			files = (
 				E79C3CEF2BBECE0800B57D26 /* LaunchScreen.storyboard in Resources */,
 				E79C3CEC2BBECE0800B57D26 /* Assets.xcassets in Resources */,
+				E70075E62BC4382E007175BC /* MockAPI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +608,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70075E42BC437D5007175BC /* EndPoints.swift in Sources */,
+				E70075E22BC43737007175BC /* JSONDataFetch.swift in Sources */,
 				E79C3D132BBED0D100B57D26 /* Offer.swift in Sources */,
 				E70075B72BC2C3CB007175BC /* VerifyView.swift in Sources */,
 				E79C3D192BBED13000B57D26 /* Login.swift in Sources */,
