@@ -16,6 +16,8 @@ class SignInViewController: UIViewController {
     private var loginHeaderLabel: UILabel!
     private var loggingPhysicalPersonBlock: LoggingPhysicalPersonView!
     
+    private var loginEmployerView: LoginEmployerView!
+    
     private var subscriptions = Set<AnyCancellable>()
     
     //MARK: Init()
@@ -56,7 +58,7 @@ class SignInViewController: UIViewController {
         loginHeaderLabel.textColor = .white
         
         loggingPhysicalPersonBlock = LoggingPhysicalPersonView(delegate: self)
-        
+        loginEmployerView = LoginEmployerView(delegate: self)
     }
     
     private func initializeHideKeyboard() {
@@ -68,7 +70,7 @@ class SignInViewController: UIViewController {
         view.backgroundColor = .black
         initializeHideKeyboard()
         
-        [loginHeaderLabel,loggingPhysicalPersonBlock].forEach {
+        [loginHeaderLabel,loggingPhysicalPersonBlock, loginEmployerView].forEach {
             view.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -79,7 +81,12 @@ class SignInViewController: UIViewController {
             loginHeaderLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 20),
             loggingPhysicalPersonBlock.topAnchor.constraint(equalTo: loginHeaderLabel.bottomAnchor, constant: 140),
             loggingPhysicalPersonBlock.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor,constant: 18),
-            loggingPhysicalPersonBlock.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -18)
+            loggingPhysicalPersonBlock.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -18),
+            
+            loginEmployerView.topAnchor.constraint(equalTo: loggingPhysicalPersonBlock.bottomAnchor,constant: 22),
+            loginEmployerView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor,constant: 18),
+            loginEmployerView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -18)
+            
         ])
 
     }

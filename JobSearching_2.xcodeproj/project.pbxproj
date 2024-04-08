@@ -16,6 +16,7 @@
 		E70075B72BC2C3CB007175BC /* VerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075B62BC2C3CB007175BC /* VerifyView.swift */; };
 		E70075D92BC2E434007175BC /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075D82BC2E434007175BC /* Code.swift */; };
 		E70075DD2BC31942007175BC /* VacancieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075DC2BC31942007175BC /* VacancieCardView.swift */; };
+		E70075DF2BC43367007175BC /* LoginEmployerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70075DE2BC43367007175BC /* LoginEmployerView.swift */; };
 		E79C3CE32BBECE0500B57D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C3CE22BBECE0500B57D26 /* AppDelegate.swift */; };
 		E79C3CE52BBECE0500B57D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C3CE42BBECE0500B57D26 /* SceneDelegate.swift */; };
 		E79C3CEC2BBECE0800B57D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79C3CEB2BBECE0800B57D26 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		E70075B62BC2C3CB007175BC /* VerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyView.swift; sourceTree = "<group>"; };
 		E70075D82BC2E434007175BC /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		E70075DC2BC31942007175BC /* VacancieCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancieCardView.swift; sourceTree = "<group>"; };
+		E70075DE2BC43367007175BC /* LoginEmployerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmployerView.swift; sourceTree = "<group>"; };
 		E79C3CDF2BBECE0500B57D26 /* JobSearching_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobSearching_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79C3CE22BBECE0500B57D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79C3CE42BBECE0500B57D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				E79C3D772BBFFF7A00B57D26 /* LoggingPhysicalPersonView.swift */,
 				E70075B42BC2C2C6007175BC /* VerifyTextField.swift */,
 				E70075B62BC2C3CB007175BC /* VerifyView.swift */,
+				E70075DE2BC43367007175BC /* LoginEmployerView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				E79C3D342BBED98E00B57D26 /* InputTextField.swift in Sources */,
 				E79C3D502BBEF56200B57D26 /* MainPageViewModelProtocol.swift in Sources */,
 				E79C3D622BBFCC3900B57D26 /* FavoritesPageViewModelProtocol.swift in Sources */,
+				E70075DF2BC43367007175BC /* LoginEmployerView.swift in Sources */,
 				E70075AF2BC2AE74007175BC /* VerificationCodeViewController.swift in Sources */,
 				E79C3D152BBED0F000B57D26 /* Vacancy.swift in Sources */,
 				E70075A82BC26D8A007175BC /* UIControlSubscription.swift in Sources */,
