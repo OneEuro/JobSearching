@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "feedbackIcon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

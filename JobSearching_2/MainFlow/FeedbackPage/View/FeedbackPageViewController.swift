@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  FeedbackPageViewController.swift
 //  JobSearching_2
 //
-//  Created by Владимир Малышев on 04.04.2024.
+//  Created by Владимир Малышев on 05.04.2024.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FeedbackPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-
