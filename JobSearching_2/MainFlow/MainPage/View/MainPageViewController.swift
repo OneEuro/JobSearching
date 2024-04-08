@@ -12,7 +12,7 @@ class MainPageViewController: UIViewController {
     private var coordinator: AppFlowCoordinatorProtocol
     private var viewModel: MainPageViewModel
     
-    private var searchBlock: UITextField!
+    private var searchBlock: UISearchTextField!
     private var filterButton: UIButton!
     private var hCollectionView: UICollectionView!
     
@@ -42,11 +42,11 @@ class MainPageViewController: UIViewController {
 extension MainPageViewController {
     
     private func setupSubviews() {
-        searchBlock = UITextField()
+        searchBlock = UISearchTextField()
         searchBlock.placeholder = "Должность, ключевые слова"
         
         filterButton = UIButton()
-        filterButton.setImage(UIImage(named: "filterIcon"), for: .normal)
+        filterButton.setBackgroundImage(UIImage(named: "filterIcon"), for: .normal)
         
         card = VacancieCardView(viewModel: viewModel)
         
@@ -66,14 +66,15 @@ extension MainPageViewController {
         NSLayoutConstraint.activate([
             searchBlock.topAnchor.constraint(equalTo: scrollView.topAnchor),
             searchBlock.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            searchBlock.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: 0.7),
-            searchBlock.heightAnchor.constraint(equalTo: scrollView.widthAnchor, constant: 0.04),
+            searchBlock.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.7),
+            searchBlock.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 0.04),
+            searchBlock.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             
             filterButton.topAnchor.constraint(equalTo: scrollView.topAnchor),
             filterButton.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            filterButton.heightAnchor.constraint(equalTo: filterButton.widthAnchor, multiplier: 1),
-            filterButton.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.04),
-            filterButton.leadingAnchor.constraint(lessThanOrEqualTo: searchBlock.trailingAnchor, constant: 30)
+            filterButton.heightAnchor.constraint(equalTo: filterButton.widthAnchor),
+            filterButton.heightAnchor.constraint(equalTo: searchBlock.heightAnchor),
+            filterButton.leadingAnchor.constraint(equalTo: searchBlock.trailingAnchor, constant: 30),
         ])
         
         NSLayoutConstraint.activate([

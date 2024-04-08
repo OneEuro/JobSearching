@@ -17,7 +17,7 @@ class LoginEmployerView: UIView {
         let l = UILabel()
         l.text = "Поиск сотрудников"
         l.numberOfLines = 1
-        l.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        l.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         l.textAlignment = .left
         l.textColor = .label
         return l
@@ -27,7 +27,7 @@ class LoginEmployerView: UIView {
         let l = UILabel()
         l.text = "Размещение вакансий и доступ к базе резюме"
         l.numberOfLines = 0
-        l.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        l.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         l.textAlignment = .left
         l.textColor = .label
         return l
@@ -81,6 +81,11 @@ class LoginEmployerView: UIView {
             vStack.trailingAnchor.constraint(equalTo: saveArea.trailingAnchor,constant: -16),
             vStack.bottomAnchor.constraint(equalTo: saveArea.bottomAnchor,constant: -24)
         ])
+        
+        NSLayoutConstraint.activate([
+            signInButton.heightAnchor.constraint(equalTo: vStack.heightAnchor, multiplier: 0.28)
+        ])
+        
     }
 }
 

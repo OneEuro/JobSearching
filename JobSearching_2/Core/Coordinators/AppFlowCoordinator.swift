@@ -51,6 +51,8 @@ class AppFlowCoordinator:NSObject, AppFlowCoordinatorProtocol {
             
         } else {
             showRegistration()
+//            guard let login = Login("test"), let email = Email("example@gmail.com"), let password = try? Password.parse("0000").get() else {return }
+//            showSearchPage(user: User(login: login, credentials: Credentials(email: email, password: password)))
         }
     }
     
@@ -92,10 +94,6 @@ class AppFlowCoordinator:NSObject, AppFlowCoordinatorProtocol {
 
 extension AppFlowCoordinator: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if !isAuth {
-            tabBarController.selectedIndex = 0
-            return false
-        }
-        return false
+        isAuth ? true : false
     }
 }
